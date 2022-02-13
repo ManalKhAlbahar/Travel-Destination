@@ -1,0 +1,12 @@
+img{
+    width : 200px;
+     height : 200px ;
+     border-radius: 10px;
+     margin-left: 20px;
+}
+#name{
+    font-family: "Lucida Console", "Courier New", monospace;
+    color :#BB6464;
+    font-size: 25px;
+    margin-left: 20px;
+}
