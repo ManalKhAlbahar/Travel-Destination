@@ -1,4 +1,6 @@
 import './Tours.css';
+import Tour from "./Tour/Tour";
+import { Link } from "react-router-dom";
 export default function Tours(props) {
     console.log("props of Home", props);
     return (
@@ -6,16 +8,19 @@ export default function Tours(props) {
         <>
             {
                 props.data.map(data => {
-                    console.log(data);
                     return (
-                        <div className='divname' key={data}>
-                            <p id='name'>  City :  {data.name}</p>
-                            <img src={data.image} />
-                        </div>
+                        <Link to={`/city/${data.id}`}>
+                            <Tour key={data.id} data={data} />
+                        </Link>
                     )
                 })
             }
         </>
 
+
+
     )
 }
+
+
+
